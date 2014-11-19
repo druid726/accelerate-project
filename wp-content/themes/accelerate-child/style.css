@@ -46,6 +46,40 @@
   text-transform: uppercase;
 }
 
+.case-study-sidebar {
+  float: left;
+  width: 33%;
+}
 
+.case-study-images {
+  float: right;
+  width: 65%;
+}
 
+h2 {
+  font-weight: 400;
+  color: #383838;
+}
 
+h5 {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 300;
+}
+
+h6 {
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+  display: inline;
+  font-weight: 300;
+}
