@@ -36,12 +36,12 @@
 .blog-post h2 {
   font-size: 24px;
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-style: bold;
 }
 .blog-post .read-more-link {
   font-size: 24px;
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-style: bold;
   color: #45ac9d;
   text-transform: uppercase;
 }
@@ -49,15 +49,17 @@
 .case-study-sidebar {
   float: left;
   width: 33%;
+  margin-top: 50px;
 }
 
 .case-study-images {
   float: right;
   width: 65%;
+  margin-top: 25px;
 }
 
 h2 {
-  font-weight: 400;
+  font-style: bold;
   color: #383838;
 }
 
@@ -74,7 +76,7 @@ h6 {
 }
 
 a {
-  font-weight: bold;
+  font-style: bold;
   text-decoration: none;
 }
 
@@ -82,4 +84,38 @@ a {
   margin: 0 20px;
   display: inline;
   font-weight: 300;
+}
+
+img {
+  margin: 25px; 0
+}
+
+ul, li {
+  list-style: none;
+}
+
+.featured-work h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.individual-featured-work h3 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 1em;
+  width: 30%;
+}
+
+.individual-featured-work figure {
+  margin-left: -40px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
 }

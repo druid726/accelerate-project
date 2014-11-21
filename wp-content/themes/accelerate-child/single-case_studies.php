@@ -1,15 +1,11 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying case studies.
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Marketing 1.0
  */
 
 get_header(); ?>
@@ -39,17 +35,17 @@ get_header(); ?>
 
         </aside>
         <div class="case-study-images">
-          <?php if($image_1) { ?>
-            <?php echo wp_get_attachment_image( $image_1, $size ); ?>
-          <?php } ?>
+          <?php if($image_1) {
+            echo wp_get_attachment_image( $image_1, $size );
+          } ?>
 
-          <?php if($image_2) { ?>
-            <?php echo wp_get_attachment_image( $image_2, $size ); ?>
-          <?php } ?>
+          <?php if($image_2) { 
+            echo wp_get_attachment_image( $image_2, $size ); 
+          } ?>
 
-         <?php if($image_3) { ?>
-           <?php echo wp_get_attachment_image( $image_3, $size ); ?>
-         <?php } ?> 
+         <?php if($image_3) { 
+           echo wp_get_attachment_image( $image_3, $size ); 
+         } ?> 
         </div>
       </article>
 
