@@ -99,17 +99,24 @@ ul, li {
   text-align: center;
 }
 
-.individual-featured-work h3 {
-  text-align: center;
-  margin-top: 0;
-  font-weight: 300;
-  font-size: 1em;
-  width: 30%;
-}
-
 .individual-featured-work figure {
   margin-left: -40px;
 }
+
+.side-by-side {
+  float: left;
+  display: inline-block;
+  margin-right: 30px;
+  width: 30%;
+}
+
+.individual-featured-work h3 {
+  text-align: center;
+  margin: 0 0 50px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
 
 .clearfix:after {
   content: ".";
@@ -118,4 +125,16 @@ ul, li {
   visibility: hidden;
   height: 0;
   line-height: 0;
+}
+
+.category {
+  text-transform: capitalize;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }
