@@ -28,11 +28,12 @@ get_header(); ?>
 <section class="featured-work">
   <div class="site-content">
     <h4>Featured Work</h4>
-    <ul class="homepage-featured-work">
-      <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
-        <?php while( have_posts() ) : the_post(); 
-          $image_1 = get_field("image_1");
-          $size = "medium";
+    <div class="no-style">
+      <ul>
+        <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+          <?php while( have_posts() ) : the_post(); 
+            $image_1 = get_field("image_1");
+            $size = "medium";
         ?>
         <li class="individual-featured-work">
           <div class="side-by-side">
@@ -45,6 +46,7 @@ get_header(); ?>
         <?php endwhile; //end of loop ?>
         <?php wp_reset_query(); //resets the altered query back to the original ?>
       </ul>
+    </div>
   </div>
 </section>
 
@@ -56,7 +58,7 @@ get_header(); ?>
         <?php while( have_posts() ) : the_post(); ?>
           <h2><?php the_title(); ?></h2>
           <?php the_excerpt(); ?>
-          <h4><a href="<?php the_permalink(); ?>" class="read-more-link">Read More...</a></h4>
+          <h4><a href="<?php the_permalink(); ?>" class="read-more-link">Read More ›</a></h4>
         <?php endwhile; //end of loop ?>
         <?php wp_reset_query(); //resets the altered query back to the original ?>
     </div>
