@@ -39,11 +39,12 @@
   font-style: bold;
 }
 .blog-post .read-more-link {
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Montserrat';
   font-style: bold;
   color: #45ac9d;
   text-transform: uppercase;
+  margin-bottom: 500px;
 }
 
 .case-study-sidebar {
@@ -99,21 +100,20 @@ ul, li {
   text-align: center;
 }
 
-.individual-featured-work figure {
+figure {
   margin-left: -40px;
 }
 
 .side-by-side {
   float: left;
-  display: inline-block;
   margin-right: 30px;
   width: 30%;
 }
 
 .individual-featured-work h3 {
   text-align: center;
-  margin: 0 0 50px;
-  font-weight: 300;
+  margin: 0 0 150px;
+  font-weight: 600;
   font-size: 1em;
 }
 
@@ -137,4 +137,9 @@ ul, li {
 
 .right {
   text-align: right;
+}
+
+.site-description p a {
+  color: #45ac9d;
+  font-style: bold;
 }
