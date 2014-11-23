@@ -168,3 +168,107 @@ ul, li {
 iframe {
   margin: 30px 0;
 }
+.entry-summary a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #45ac9d;
+}
+
+.entry-summary h1 {
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: Montserrat, sans-serif; 
+  font-size: inherit; 
+  line-height: 29.600000381469727px; 
+  margin: 0px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+.entry-summary h2 { 
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: montserrat, sans-serif; 
+  font-size: 32px; 
+  font-weight: normal; 
+  line-height: 42.5px; 
+  margin: 50px 0px 25px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+
+.entry-summary h3 {
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: Montserrat, sans-serif; 
+  font-size: 24px; 
+  font-weight: normal; l
+  ine-height: 29.5px; 
+  margin: 0px 0px 22px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+
+.entry-summary h3 a {
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: Montserrat, sans-serif; 
+  font-size: 24px; 
+  font-weight: normal; l
+  ine-height: 29.5px; 
+  margin: 0px 0px 22px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+.entry-summary h3 a:hover {
+  color: #45ac9d; 
+}
+
+.entry-summary p {
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: 'open sans', sans-serif; 
+  font-size: 16.5px; 
+  line-height: 24.5px; 
+  margin-bottom: 30px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+
+.entry-wrap ul {
+  border: 0px; 
+  box-sizing: border-box; 
+  color: #3b3b3b; 
+  font-family: 'open sans'; 
+  font-size: 16px; 
+  line-height: 1.6; 
+  list-style-type: none; 
+  margin: 0px 0px 20px 24px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+
+.entry-wrap li {
+  border: 0px; 
+  box-sizing: border-box; 
+  font-family: 'open sans', helvetica, arial, sans-serif; 
+  font-style: inherit; 
+  font-variant: inherit; 
+  line-height: 26px; 
+  list-style-type: disc; 
+  margin: 0px 0px 10px 20px; 
+  padding: 0px; 
+  vertical-align: baseline;
+}
+
+.entry-wrap li a {
+  background-position: 0px 0px; 
+  background-repeat: initial initial; 
+  box-sizing: border-box; 
+  color: #45ac9d; 
+  text-decoration: none;
+}
