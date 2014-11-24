@@ -62,7 +62,7 @@ get_header(); ?>
             <h4><a href="<?php the_permalink(); ?>" class="read-more-link">Read More ›</a></h4>
           <?php endwhile; //end of loop ?>
           <?php wp_reset_query(); //resets the altered query back to the original ?>
-      </div><!--blog-post-left-->
+      </div><--blog-post-left-->
       <div class="blog-post-right">
         <h4>Recent Tweet</h4>
           <p>Lorem ipsum</p>
