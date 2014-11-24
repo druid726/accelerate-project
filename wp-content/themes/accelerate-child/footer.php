@@ -17,16 +17,17 @@
       <div class="site-info">
         <div class="site-description">
           <p><a href="">Accelerate</a> is a strategy and maketing agency aimed at making our clients visible and building their businesses.</p>
-          <div class="copy_right">
+          <div class="copyright">
             <p>&copy; 2014 Accelerate, LLC</p>
           </div>
         </div>
         
-
-
       <nav class="social-media-navigation" role="navigation">
-
-        <!--<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>-->
+        <div class="social-btns">
+          <a href="" class="soc-icon tw"></a>
+          <a href="" class="soc-icon fb"></a>
+          <a href="" class="soc-icon ln"></a>
+        </div>
       </nav>
 
         

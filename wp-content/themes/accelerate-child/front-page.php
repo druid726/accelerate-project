@@ -52,7 +52,8 @@ get_header(); ?>
 
 <section class="recent-posts">
   <div class="site-content">
-    <div class="blog-post">
+  <div class="blog-post">
+    <div class="blog-post-left">
       <h4>From the Blog</h4>
         <?php query_posts('posts_per_page=1'); ?>
         <?php while( have_posts() ) : the_post(); ?>
@@ -62,6 +63,12 @@ get_header(); ?>
         <?php endwhile; //end of loop ?>
         <?php wp_reset_query(); //resets the altered query back to the original ?>
     </div>
+    <div class="blog-post-right">
+      <h4>Recent Tweet</h4>
+      
+      <h4><a href="" class="read-more-link">Follow Us ›</a></h4>
+    </div>
+  </div>
   </div>
 </section>
 

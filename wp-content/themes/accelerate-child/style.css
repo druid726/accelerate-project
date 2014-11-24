@@ -30,7 +30,7 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 .blog-post {
-  width: 50%;
+  /*width: 48%;*/
 }
 .blog-post h4 {
   font-size: 16px;
@@ -156,8 +156,8 @@ ul, li {
   color: #45ac9d;
   font-style: bold;
 }
-.copy_right p {
-  font-size: 9px;
+.copyright p {
+  font-size: xx-small;
   font-weight: 300;
 }
 
@@ -272,3 +272,81 @@ iframe {
   color: #45ac9d; 
   text-decoration: none;
 }
+.blog-post-left {
+  width:48%;
+  float:left;
+}
+.blog-post-right{
+  width:48%;
+  float: right;
+}
+
+
+/* FOOTER */
+
+.site-footer .site-info {
+  border-top: 1px dotted #e3e1e1;
+  padding-top: 20px;
+  margin-top: 200px;
+}
+
+.site-footer {
+    clear: both;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 40px auto;
+}
+
+.social-btns .soc-icon {
+  background: url(img/soc-sprite.png) no-repeat;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin-left: 2px;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.social-btns .soc-icon.tw {
+  background-position: 0 0;
+}
+.social-btns .soc-icon.fb {
+  background-position: -28px 0;
+}
+.social-btns .soc-icon.ln {
+  background-position: -56px 0;
+}
+.social-btns .soc-icon.db {
+  background-position: -83px 0;
+  width: 23px;
+}
+.social-btns .soc-icon:hover {
+  -moz-transform: scale(1) rotate(360deg);
+  -webkit-transform: scale(1) rotate(360deg);
+  -o-transform: scale(1) rotate(360deg);
+  -ms-transform: scale(1) rotate(360deg);
+  transform: scale(1) rotate(360deg);
+}
+
+.social-menu ul {
+  float: right;
+  text-align: left;
+  list-style: none;
+}
+.social-menu ul li {
+  position: relative;
+  display: inline-block;
+}
+.social-menu li a:before {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: top;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  content: '/f0c0';
+}
+.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+.social-menu li a[href*="twitter.com"]::before { content: '\f099'; }
+
