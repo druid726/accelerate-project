@@ -41,35 +41,35 @@ get_header(); ?>
              <?php echo wp_get_attachment_image($image_1, $size); ?> 
             </figure>
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          </div>
-        </li>
+          </div><!--side-by-sdie-->
+        </li><!--individual-featured-work-->
         <?php endwhile; //end of loop ?>
         <?php wp_reset_query(); //resets the altered query back to the original ?>
       </ul>
-    </div>
-  </div>
-</section>
+    </div><!--site-content-->
+  </div><!--no-style-->
+</section><!-- featured-work -->
 
 <section class="recent-posts">
   <div class="site-content">
-  <div class="blog-post">
-    <div class="blog-post-left">
-      <h4>From the Blog</h4>
-        <?php query_posts('posts_per_page=1'); ?>
-        <?php while( have_posts() ) : the_post(); ?>
-          <h2><?php the_title(); ?></h2>
-          <?php the_excerpt(); ?>
-          <h4><a href="<?php the_permalink(); ?>" class="read-more-link">Read More ›</a></h4>
-        <?php endwhile; //end of loop ?>
-        <?php wp_reset_query(); //resets the altered query back to the original ?>
-    </div>
-    <div class="blog-post-right">
-      <h4>Recent Tweet</h4>
-      
-      <h4><a href="" class="read-more-link">Follow Us ›</a></h4>
-    </div>
-  </div>
-  </div>
-</section>
+    <div class="blog-post">
+      <div class="blog-post-left">
+        <h4>From the Blog</h4>
+          <?php query_posts('posts_per_page=1'); ?>
+          <?php while( have_posts() ) : the_post(); ?>
+            <h2><?php the_title(); ?></h2>
+            <?php the_excerpt(); ?>
+            <h4><a href="<?php the_permalink(); ?>" class="read-more-link">Read More ›</a></h4>
+          <?php endwhile; //end of loop ?>
+          <?php wp_reset_query(); //resets the altered query back to the original ?>
+      </div><--blog-post-left-->
+      <div class="blog-post-right">
+        <h4>Recent Tweet</h4>
+          <p>Lorem ipsum</p>
+        <h4><a href="" class="read-more-link">Follow Us ›</a></h4>
+      </div><!--blog-post-right-->
+    </div><!--blog-post-->
+  </div><!--site content-->
+</section><!--recent posts-->
 
 <?php get_footer(); ?>
