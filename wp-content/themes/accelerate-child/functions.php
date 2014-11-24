@@ -38,7 +38,6 @@ function create_custom_post_types() {
       )
     );
 }
-
 add_action( 'init', 'create_custom_post_types' );
 
 // Runs before the posts are fetched
