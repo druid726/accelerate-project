@@ -65,7 +65,8 @@ get_header(); ?>
       </div><!--blog-post-left-->
       <div class="blog-post-right">
         <h4>Recent Tweet</h4>
-          <p>Lorem ipsum</p>
+          <h2>@Accelerate</h2>
+          <p>5 Hard Truths From the Person Reading Your Resume <br> <a href="http://on.mash.to/1zsf79w" target=_blank>http://on.mash.to/1zsf79w</p>
         <h4><a href="" class="read-more-link">Follow Us ›</a></h4>
       </div><!--blog-post-right-->
     </div><!--blog-post-->

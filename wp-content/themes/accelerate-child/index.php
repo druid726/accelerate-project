@@ -46,7 +46,13 @@ get_header(); ?>
           </div>
         </article>
       <?php endwhile; endif; ?>
-
+      
+      <?php if ( have_posts() ): ?>
+          <div id="navigation">
+              <div class="left"><p><?php next_posts_link('&laquo; <span>Older Posts</span>'); ?></p></div>
+              <div class="right"><p><?php previous_posts_link('<span>Newer Posts</span> &raquo;'); ?></p></div>
+          </div>
+      <?php endif; ?>
       </div>
     </div>
   </section>

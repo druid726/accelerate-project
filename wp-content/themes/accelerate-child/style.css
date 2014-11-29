@@ -155,6 +155,8 @@
   font-size: 24px;
   font-family: 'Montserrat';
   font-style: bold;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 .blog-post .read-more-link {
   font-size: 16px;
@@ -357,6 +359,12 @@ iframe {
   vertical-align: baseline;
 }
 
+.entry-footer .entry-terms a:hover {
+  color: #45ac9d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .entry-wrap ul {
   border: 0px; 
   box-sizing: border-box; 
@@ -533,3 +541,41 @@ iframe {
 #primary-navigation li.current-menu-item {
   font-weight: bold;
 }
+
+#navigation {
+  font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#navigation .left {
+  float: left;
+}
+#navigation .right {
+  float: right;
+}
+#navigation .left a,
+#navigation .right a {
+  color: #3b3b3b;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#navigation .left a span,
+#navigation .right a span {
+  color: #3b3b3b;
+}
+#navigation .left a span {
+  padding-left: 8px;
+}
+#navigation .right a span {
+  padding-right: 8px;
+}
+#navigation .left a:hover span,
+#navigation .right a:hover span {
+  text-decoration: none;
+  color: #45ac9d;
+}
+
