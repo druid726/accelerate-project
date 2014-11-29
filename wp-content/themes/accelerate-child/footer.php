@@ -33,7 +33,6 @@
         
       </div><!-- .site-info -->
     </footer>
-  </div><!-- #page -->
 
   <?php wp_footer(); ?>
 </body>

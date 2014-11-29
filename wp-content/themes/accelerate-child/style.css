@@ -35,6 +35,28 @@
     padding: 100px 0;
 }
 
+.missing {
+  background: url("img/no-stopping-taxi.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+  height: 440px;
+  padding: 50px 0;
+}
+
+.missing-sidebar h2 {
+  color: #45ac9d;
+}
+
+.missing-sidebar {
+  float: right;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.missing-sidebar a {
+  color: #45ac9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .about h2 {
     color: #fff;
     font-family: "open sans";
@@ -243,7 +265,7 @@ ul, li {
 }
 
 .site-description p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.75em;
   letter-spacing: 0.25px;
 }
