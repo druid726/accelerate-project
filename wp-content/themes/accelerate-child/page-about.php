@@ -13,6 +13,7 @@
 get_header(); ?>
 
       
+<section class="about-page">
   <div class="site-content">
     <?php while ( have_posts() ) : the_post();
       $our_services = get_field('our_services');
@@ -33,7 +34,6 @@ get_header(); ?>
       $size = 'full';
     ?>
 
-<section class="about-page">
     <div class="about">
       <h2><a href="#">Accelerate</a> is a strategy and maketing agency located in the heart of NYC. Our goal is to build 
       businesses by making our clients visible and making their customers smile.</h2>
