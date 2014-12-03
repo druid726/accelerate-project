@@ -14,7 +14,6 @@ get_header(); ?>
 
       
 <section class="about-page">
-  <div class="site-content">
     <?php while ( have_posts() ) : the_post();
       $our_services = get_field('our_services');
       $description = get_field('description');
@@ -32,8 +31,10 @@ get_header(); ?>
       $description_3 = get_field('description_3');
       $image_3 = get_field('image_3');
       $size = 'full';
+      $contact_us = get_field('contact_us');
     ?>
 
+  <div class="site-content">
     <div class="about">
       <h2><a href="#">Accelerate</a> is a strategy and maketing agency located in the heart of NYC. Our goal is to build 
       businesses by making our clients visible and making their customers smile.</h2>
@@ -77,7 +78,6 @@ get_header(); ?>
           } ?>
         </div><!--about-images-->
 
-
         <aside class="about-sidebar-1">
           <h2><?php echo $our_services_3; ?></h2>
           <h6><?php echo $description_3; ?></h6>
@@ -89,10 +89,13 @@ get_header(); ?>
             echo wp_get_attachment_image( $image_3, $size );
           } ?>
         </div><!--about-images-->
-
-
       <?php endwhile; // end of the loop. ?>
 
-</section>
+      <div class="about-tag">
+        <h2><?php echo $contact_us; ?><a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a></h2>
+      </div><!-- about-tag -->
+
     </div><!-- #content -->
+</section>
+
 <?php get_footer(); ?>

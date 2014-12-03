@@ -28,33 +28,28 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+/* ABOUT PAGE */
 .about-page {
     background: url("img/taxi-photo-about.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 240px;
-    margin: 0 0 100px;
     padding: 100px 0;
 }
 
-.missing {
-  background: url("img/no-stopping-taxi.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
-  height: 440px;
-  padding: 50px 0;
+.about-tag h2 {
+  margin: 75px auto;
+  border-top: 1px dotted #e3e1e1;
+  width: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  clear: both;
 }
 
-.missing-sidebar h2 {
-  color: #45ac9d;
-}
-
-.missing-sidebar {
-  float: right;
-  width: 25%;
-  margin-top: 10px;
-}
-
-.missing-sidebar a {
-  color: #45ac9d;
-  text-decoration: none;
-  font-weight: bold;
+.about-tag a {
+  margin: 75px auto;
+  border-top: 1px dotted #e3e1e1;
+  width: 100%;
+  text-align: center;
+  clear: both;
 }
 
 .about h2 {
@@ -137,6 +132,31 @@
   width: 25%;
   margin-top: 10px;
 }
+
+
+/* 404 PAGE */
+.missing {
+  background: url("img/no-stopping-taxi.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+  height: 440px;
+  padding: 50px 0;
+}
+
+.missing-sidebar h2 {
+  color: #45ac9d;
+}
+
+.missing-sidebar {
+  float: right;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.missing-sidebar a {
+  color: #45ac9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -148,7 +168,7 @@
   font-size: 16px;
   font-family: 'Montserrat';
   color: #909090;
-  text-transform: uppercase;;
+  text-transform: uppercase;
 }
 
 .blog-post h2 {
@@ -176,6 +196,50 @@
   float: right;
   width: 65%;
   margin-top: 25px;
+}
+
+.widget-area h3 {
+  color: #383838;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-style: bold;
+  margin: 38px 0 20px;
+  line-height: 30px;
+}
+
+
+.widget-area a:hover {
+  color: #45ac9d;
+  text-decoration: none;
+}
+
+
+.tweets ul {
+  color: #3b3b3b; 
+  font-family: "open sans";
+  font-weight: 400;
+  margin-bottom: 30px; 
+  padding: 0px; 
+  vertical-align: baseline;
+  font-size: 16.5px;
+  line-height: 1.75em;
+  letter-spacing: 0.25px;
+}
+
+.tweets li {
+  color: #3b3b3b; 
+  font-family: "open sans";
+  font-weight: 400;
+  margin-bottom: 30px; 
+  padding: 0px; 
+  vertical-align: baseline;
+  font-size: 16.5px;
+  line-height: 1.75em;
+  letter-spacing: 0.25px;
+}
+
+.widget-area h4 {
+  margin-left: 40px;
 }
 
 h2 {
