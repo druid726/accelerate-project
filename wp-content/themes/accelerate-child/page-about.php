@@ -14,6 +14,7 @@ get_header(); ?>
 
       
 <section class="about-page">
+  <div class="site-content">
     <?php while ( have_posts() ) : the_post();
       $our_services = get_field('our_services');
       $description = get_field('description');
@@ -34,7 +35,6 @@ get_header(); ?>
       $contact_us = get_field('contact_us');
     ?>
 
-  <div class="site-content">
     <div class="about">
       <h2><a href="#">Accelerate</a> is a strategy and maketing agency located in the heart of NYC. Our goal is to build 
       businesses by making our clients visible and making their customers smile.</h2>
@@ -90,12 +90,13 @@ get_header(); ?>
           } ?>
         </div><!--about-images-->
       <?php endwhile; // end of the loop. ?>
-
+    </div><!--site content -->
+  </section>
+    <div class="site-content">
       <div class="about-tag">
-        <h2><?php echo $contact_us; ?><a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a></h2>
+          <h2><?php echo $contact_us; ?></h2>
+          <a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
       </div><!-- about-tag -->
-
     </div><!-- #content -->
-</section>
 
 <?php get_footer(); ?>
