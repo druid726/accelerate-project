@@ -3,6 +3,7 @@
  * The template for displaying the 404 page
  *
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

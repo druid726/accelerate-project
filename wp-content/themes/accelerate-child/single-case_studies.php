@@ -2,6 +2,7 @@
 /**
  * The template for displaying case studies.
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  *
  * @package WordPress
  * @subpackage Accelerate Marketing

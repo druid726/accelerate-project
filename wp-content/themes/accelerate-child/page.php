@@ -7,6 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

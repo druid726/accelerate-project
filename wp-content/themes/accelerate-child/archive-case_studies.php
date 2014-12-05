@@ -3,6 +3,7 @@
  * The template for displaying archive case studies.
  *
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

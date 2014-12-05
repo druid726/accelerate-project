@@ -4,6 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0

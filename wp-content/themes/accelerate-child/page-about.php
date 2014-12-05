@@ -3,6 +3,7 @@
  * Template Name: About Custom Page
  * Description: Custom About Page for Accelerate Marketing.
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

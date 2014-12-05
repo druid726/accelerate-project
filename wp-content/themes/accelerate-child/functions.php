@@ -20,6 +20,7 @@
  * For more information on hooks, actions, and filters,
  * @link http://codex.wordpress.org/Plugin_API
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

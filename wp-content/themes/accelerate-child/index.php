@@ -8,7 +8,7 @@
  * e.g., it puts together the home page when no home.php file exists.
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
- *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

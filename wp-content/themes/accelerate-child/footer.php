@@ -4,6 +4,7 @@
  *
  * Contains footer content and the closing of the #main and #page div elements.
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0

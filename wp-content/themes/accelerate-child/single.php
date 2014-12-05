@@ -2,6 +2,7 @@
 /**
  * The Template for displaying all single posts
  *
+ * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
