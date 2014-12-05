@@ -12,7 +12,6 @@ get_header(); ?>
   <!-- SINGLE BLOG PAGE -->
   <section class="blog-page">
     <div class="container wrap">
-
       <div class="main-content">
 <?php
         // Start the Loop.
