@@ -49,5 +49,5 @@
     </div>
 
   </header><!-- #masthead -->
-
-  <!-- <div id="main" class="site-main"> -->
+  
+<div id="main" class="site-main">

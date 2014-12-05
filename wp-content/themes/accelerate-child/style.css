@@ -215,16 +215,13 @@
   margin: 38px 0 20px;
   line-height: 30px;
 }
-
 .widget-area a {
-  visibility: hidden;
+  display: none;
 }
-
 
 .widget-area h4 a {
-  visibility: visible;
+  display: inline;
 }
-
 
 .tweets ul {
   color: #3b3b3b; 
@@ -250,6 +247,22 @@
   letter-spacing: 0.25px;
 }
 
+.textwidget {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-style: bold;
+  color: #45ac9d;
+  text-transform: uppercase; 
+}
+
+.textwidget h4 a {
+  margin-left: -40px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-style: bold;
+  color: #45ac9d;
+  text-transform: uppercase; 
+}
 .widget-area h4 {
   margin-left: 40px;
 }
@@ -315,7 +328,7 @@ ul, li {
 
 .individual-featured-work h3 {
   text-align: center;
-  margin: 0 0 150px;
+  margin: 0 0 100px;
   font-weight: 600;
   font-size: 1em;
 }
@@ -655,3 +668,11 @@ iframe {
   color: #45ac9d;
 }
 
+
+/* MAIL SIGN-UP FORM */
+
+.mc4wp-form button, .mc4wp-form input[type=submit] {
+  color: #fff;
+  background: #45ac9d;
+  border-color: #45ac9d;
+}

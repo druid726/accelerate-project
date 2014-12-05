@@ -69,7 +69,6 @@ get_header(); ?>
           <div id="secondary" class="widget-area">
               <h4>Recent Tweet</h4>
               <?php dynamic_sidebar( 'sidebar-2' ); ?>
-              <h4><a href="" class="read-more-link">Follow Us ›</a></h4>
           </div>
         <?php endif; ?>
        </div><!--blog-post-right-->
