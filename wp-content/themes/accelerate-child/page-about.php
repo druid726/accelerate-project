@@ -46,9 +46,7 @@ get_header(); ?>
         </aside>
 
         <div class="about-images">
-          <?php if($image) {
-            echo wp_get_attachment_image( $image, $size );
-          } ?>
+          <?php echo wp_get_attachment_image( $image, $size ); ?>
         </div><!--about-images-->
 
 
@@ -59,9 +57,7 @@ get_header(); ?>
         </aside>
 
         <div class="about-images-1">
-          <?php if($image_1) {
-            echo wp_get_attachment_image( $image_1, $size );
-          } ?>
+          <?php echo wp_get_attachment_image( $image_1, $size );?>
         </div><!--about-images-->
 
         <aside class="about-sidebar">
@@ -71,9 +67,7 @@ get_header(); ?>
         </aside>
 
         <div class="about-images">
-          <?php if($image_2) {
-            echo wp_get_attachment_image( $image_2, $size );
-          } ?>
+          <?php echo wp_get_attachment_image( $image_2, $size ); ?>
         </div><!--about-images-->
 
         <aside class="about-sidebar-1">
@@ -83,9 +77,7 @@ get_header(); ?>
         </aside>
 
         <div class="about-images-1">
-          <?php if($image_3) {
-            echo wp_get_attachment_image( $image_3, $size );
-          } ?>
+          <?php echo wp_get_attachment_image( $image_3, $size ); ?>
         </div><!--about-images-->
       <?php endwhile; // end of the loop. ?>
     </div><!--site content -->
