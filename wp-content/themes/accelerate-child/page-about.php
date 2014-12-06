@@ -20,15 +20,12 @@ get_header(); ?>
       $our_services = get_field('our_services');
       $description = get_field('description');
       $image = get_field('image');
-      $size = 'full';
       $our_services_1 = get_field('our_services_1');
       $description_1 = get_field('description_1');
       $image_1 = get_field('image_1');
-      $size = 'full';
       $our_services_2 = get_field('our_services_2');
       $description_2 = get_field('description_2');
       $image_2 = get_field('image_2');
-      $size = 'full';
       $our_services_3 = get_field('our_services_3');
       $description_3 = get_field('description_3');
       $image_3 = get_field('image_3');

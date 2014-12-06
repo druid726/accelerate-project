@@ -68,7 +68,7 @@ get_header(); ?>
   <!-- END blog page -->
 
   <footer class="navigation container">
-    <div class="left">&larr;<a href="http://localhost:8888/accelerate/blog/">back to posts</a></div>
+    <div class="left">&larr;<a href="http://localhost:8888/accelerate/?page_id=6">back to posts</a></div>
   </footer>
   
         <?php endwhile; ?>
