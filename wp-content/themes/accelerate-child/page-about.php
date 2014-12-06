@@ -46,7 +46,9 @@ get_header(); ?>
         </aside>
 
         <div class="about-images">
-          <?php echo wp_get_attachment_image( $image, $size ); ?>
+          <figure>
+            <?php echo wp_get_attachment_image( $image, $size ); ?>
+          </figure>
         </div><!--about-images-->
 
 
@@ -57,7 +59,9 @@ get_header(); ?>
         </aside>
 
         <div class="about-images-1">
-          <?php echo wp_get_attachment_image( $image_1, $size );?>
+          <figure>
+            <?php echo wp_get_attachment_image( $image_1, $size );?>
+          </figure>
         </div><!--about-images-->
 
         <aside class="about-sidebar">
