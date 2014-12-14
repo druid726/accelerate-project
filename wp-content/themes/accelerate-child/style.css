@@ -496,6 +496,21 @@ iframe {
   float: right;
 }
 
+/* BLOG SIDEBAR */
+
+.input-btn {
+  height: 37px;
+  line-height: 35px;
+  border: 1px solid #BFBFBF;
+  background: #45ac9d url(img/search-arrow.png) no-repeat center;
+  color: #fff;
+  vertical-align: middle;
+  width: 33px;
+}
+
+.menu a {
+  margin-left: -20px;
+}
 
 /* FOOTER */
 

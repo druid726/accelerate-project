@@ -57,4 +57,5 @@ get_header(); ?>
     </div>
   </section>
   <!-- END blog page -->
+  <?php get_sidebar(); ?>
 <?php get_footer(); ?>
