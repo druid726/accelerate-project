@@ -4,7 +4,7 @@ Donate link: https://yoast.com/donate/
 Tags: analytics, google analytics, statistics, tracking, stats, google, yoast
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 5.1.4
+Stable tag: 5.2.3
 
 Track your WordPress site easily with the latest tracking codes and lots added data for search result pages and error pages.
 
@@ -48,6 +48,47 @@ This section describes how to install the plugin and get it working.
 1. Go to the options panel under the 'Settings' menu and add your Analytics account number and set the settings you want.
 
 == Changelog ==
+
+= 5.2.3 =
+
+Release Date: December 11th, 2014
+
+Enhancements:
+	* improved visual look and data representation for dashboard graphs, props [Andrey Savchenko](https://github.com/Rarst/)
+	* when manual UA-code is selected, the profile selection gets disabled to clarify that the user is choosing an alternative to regular profile selection.
+
+Bugfixes:
+	* Fixes a bug where GA profile was fetched with every admin request, resulting in a pile of unnecessary API requests.
+	* Fixes a problem where GA started throttling API requests done by our plugin because there were too many. We now fetch the data only once a day from GA. For realtime data, users should go to Google Analytics.
+
+= 5.2.2 =
+
+Release Date: December 10th, 2014
+
+Bugfixes:
+	* Fixes a bug where it was no longer possible to uncheck checkboxes in the settings.
+	* Fixes a bug where jQuery Chosen component was not rendered correctly on a hidden tab.
+
+= 5.2.1 =
+
+Release Date: December 9th, 2014
+
+Enhancements:
+	* Replaced jQuery Chosen library with latest version to enable optgroup search.
+	* Shows a warning when configuring a manual UA-code that this will not work together with the dashboards functionality.
+
+Bugfixes:
+	* Fixes a 'headers already sent' warning.
+	* Fixes a bug where nothing was shown on the dashboards for setups with a manual UA-code. It now shows you a message that you need to authenticate with Google Analytics if you wish to make use of the dashboards feature.
+
+= 5.2 =
+
+Release Date: December 9th, 2014
+
+* Features:
+	* Added a brand new GA dashboard:
+		* Added graphs showing the sessions and bounce rates.
+		* Added reporting tables showing top pages, traffic sources and countries.
 
 = 5.1.4 =
 

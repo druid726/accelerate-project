@@ -85,18 +85,65 @@ if ( ! class_exists( 'Yoast_Google_Analytics', false ) ) {
 		 * @return array
 		 */
 		public function get_profiles() {
-			$return   = array();
-			$accounts = $this->format_accounts_call( $this->do_request( 'https://www.googleapis.com/analytics/v3/management/accounts/~all/webproperties', 'https://www.googleapis.com/auth/analytics.readonly' ) );
+			$return = array();
+			$result = array();
 
-			$response = $this->do_request( 'https://www.googleapis.com/analytics/v2.4/management/accounts/~all/webproperties/~all/profiles', 'https://www.googleapis.com/auth/analytics.readonly' );
+			$result['accounts'] = $this->get_option_api( 'yst_ga_accounts' );
+			$result['response'] = $this->get_option_api( 'yst_ga_response' );
 
-			if ( $response ) {
-				$this->save_profile_response( $response, $accounts );
+			if ( $result['accounts'] === false || $result['response'] === false ) {
+				$result = $this->fetch_api_profiles();
+			}
 
-				$return = $this->parse_profile_response( $response );
+			if ( $result['response'] ) {
+				$this->save_profile_response( $result['response'], $result['accounts'] );
+
+				$return = $this->parse_profile_response( $result['response'] );
 			}
 
 			return $return;
+		}
+
+		/**
+		 * Get the transient of an API call
+		 *
+		 * @param $name
+		 *
+		 * @return string
+		 */
+		private function get_option_api( $name ) {
+			return get_option( $name );
+		}
+
+		/**
+		 * Save the option API
+		 *
+		 * @param $name
+		 * @param $value
+		 *
+		 * @return string
+		 */
+		private function save_option_api( $name, $value ) {
+			return update_option( $name, $value );
+		}
+
+		/**
+		 * Fetch the API profiles and store them
+		 *
+		 * @return array
+		 */
+		private function fetch_api_profiles() {
+			$accounts = $this->format_accounts_call( $this->do_request( 'https://www.googleapis.com/analytics/v3/management/accounts/~all/webproperties', 'https://www.googleapis.com/auth/analytics.readonly' ) );
+			$response = $this->do_request( 'https://www.googleapis.com/analytics/v2.4/management/accounts/~all/webproperties/~all/profiles', 'https://www.googleapis.com/auth/analytics.readonly' );
+
+			// Save the accounts and response results in the new transient
+			$this->save_option_api( 'yst_ga_accounts', $accounts );
+			$this->save_option_api( 'yst_ga_response', $response );
+
+			return array(
+				'accounts' => $accounts,
+				'response' => $response,
+			);
 		}
 
 		/**
@@ -275,9 +322,11 @@ if ( ! class_exists( 'Yoast_Google_Analytics', false ) ) {
 					}
 
 					foreach ( $ga_accounts as $key => $ga_account ) {
-						$tmp_array = array(
-							'id'   => $ga_account['ua'],
-							'name' => $ga_account['title'] . ' (' . $ga_account['ua'] . ')',
+						$return[] = array(
+							'id'         => $ga_account['profile_id'],
+							'profile_id' => $ga_account['profile_id'],
+							'ua_code'    => $ga_account['ua'],
+							'name'       => $ga_account['title'] . ' (' . $ga_account['ua'] . ')',
 						);
 
 						if ( isset( $this->options['ga_api_response_accounts'][$ga_account['ua']] ) ) {
@@ -326,6 +375,8 @@ if ( ! class_exists( 'Yoast_Google_Analytics', false ) ) {
 				$ns         = $entry->getNamespaces( true );
 				$properties = $entry->children( $ns['dxp'] )->property;
 
+				$profile_id = (int) $properties[3]->attributes()->value; // ga:profileId
+
 				if ( isset ( $properties[$ua_key]->attributes()->value ) ) {
 					$ua = (string) trim( $properties[$ua_key]->attributes()->value );
 				}
@@ -336,8 +387,9 @@ if ( ! class_exists( 'Yoast_Google_Analytics', false ) ) {
 
 				if ( ! empty( $ua ) && ! empty( $title ) ) {
 					$return[] = array(
-						'ua'    => $ua,
-						'title' => $title,
+						'ua'         => $ua,
+						'profile_id' => $profile_id,
+						'title'      => $title,
 					);
 				}
 			}
@@ -364,7 +416,7 @@ if ( ! class_exists( 'Yoast_Google_Analytics', false ) ) {
 		 *
 		 * @return mixed
 		 */
-		protected function get_options() {
+		public function get_options() {
 			return get_option( $this->option_name );
 		}
 
