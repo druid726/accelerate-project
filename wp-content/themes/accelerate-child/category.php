@@ -4,10 +4,11 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
+ * Patti O'Neill - pdoneill26@gmail.com
+ *
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Child Them
- * @author Patti O'Neill
+ * @since Accelerate Marketing 1.0
  */
 
 get_header(); ?>

@@ -63,6 +63,7 @@ get_header(); ?>
 
       </div>
 
+<?php get_sidebar(); ?>
     </div>
   </section>
   <!-- END blog page -->

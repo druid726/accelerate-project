@@ -21,10 +21,8 @@
 get_header(); ?>
 
   <div class="container wrap">
-    <div class="main-content">
       <?php if ( have_posts() ) : ?>
-        <header class="page-header">
-          <h1 class="page-title">
+        <header class="top-head-title">
             <?php
               if ( is_day() ) :
                 printf( __( 'Daily Archives for <span>%s</span>', 'accelerate-child' ), get_the_date() );
@@ -40,8 +38,8 @@ get_header(); ?>
 
               endif;
             ?>
-          </h1>
         </header><!-- .page-header -->
+    <div class="main-content">
 
         <?php
           // Start the Loop.

@@ -53,3 +53,5 @@ register_sidebar( array(
 
 
 register_nav_menu('category-menu', 'Category Menu');
+
+
