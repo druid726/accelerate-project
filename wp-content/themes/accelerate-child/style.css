@@ -23,6 +23,13 @@
   margin: 0 auto;
 }
 
+aside.sidebar {
+  border-left: 1px solid #bfbfbf;
+  padding: 55px 0;
+  float: left;
+  width: 31%;
+}
+
 /* Homepage Styles */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -301,6 +308,15 @@ a {
   font-size: 24px;
 }
 
+.entry-summary .read-more-link a {
+  color: #3b3b3b;
+}
+
+.entry-summary .read-more-link a:hover {
+  text-decoration: none;
+  color: #45ac9d
+}
+
 img {
   margin: 25px 0;
 }
@@ -379,10 +395,15 @@ iframe {
 }
 .entry-summary a {
   text-decoration: none;
-  font-weight: 300;
-  color: #45ac9d;
+  font-weight: 700;
+  color: #3b3b3b;
 }
 
+.entry-summary a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: #45ac9d;
+}
 .entry-summary h1 {
   border: 0px; 
   box-sizing: border-box; 
@@ -413,8 +434,8 @@ iframe {
   color: #3b3b3b; 
   font-family: Montserrat, sans-serif; 
   font-size: 24px; 
-  font-weight: normal; l
-  ine-height: 29.5px; 
+  font-weight: normal; 
+  line-height: 29.5px; 
   margin: 0px 0px 22px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -426,8 +447,8 @@ iframe {
   color: #3b3b3b; 
   font-family: Montserrat, sans-serif; 
   font-size: 24px; 
-  font-weight: normal; l
-  ine-height: 29.5px; 
+  font-weight: normal; 
+  line-height: 29.5px; 
   margin: 0px 0px 22px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -719,6 +740,18 @@ small {
   margin: 24px 0;
   float: right;
   border: 0;
+}
+
+.contact-form h3 {
+  text-align: center;
+  color: #45ac9d;
+  padding-top: 50px;
+}
+
+.contact-form p {
+  text-align: center;
+  color: #bfbfbf;
+  margin-top: 25px;
 }
 
 /* MENU */

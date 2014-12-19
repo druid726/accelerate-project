@@ -34,13 +34,14 @@ get_header(); ?>
               <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </header>
             <div class="entry-summary">
-              <?php the_excerpt(); ?>
+              <?php the_excerpt() ?>
+              <a href="<?php the_permalink() ?>" class="read-more-link">Read More ›</a>
             </div>
             <footer class="entry-footer">
               <div class="entry-meta">
                 <span class="entry-terms author">Written by <a href=""><?php the_author(); ?></a></span>
                 <span class="entry-terms category">Posted in <a href=""><?php the_category(', '); ?></a></span>
-                <span class="entry-terms commets"><a href="">Leave a Comment</a></span>
+                <span class="entry-terms comments"><?php echo get_comments_number() ?> comments</span>     
               </div>
             </footer>
           </div>

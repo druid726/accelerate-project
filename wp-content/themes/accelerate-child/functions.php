@@ -54,4 +54,23 @@ register_sidebar( array(
 
 register_nav_menu('category-menu', 'Category Menu');
 
+/**
+ * Remove the text - 'You may use these <abbr title="HyperText Markup
+ * Language">HTML</abbr> tags ...'
+ * from below the comment entry box.
+ */
 
+add_filter('comment_form_defaults', 'remove_comment_styling_prompt');
+
+function remove_comment_styling_prompt($defaults) {
+  $defaults['comment_notes_after'] = '';
+  return $defaults;
+}
+
+//changes to blog excerpt
+
+function custom_excerpt_more($more) {
+  return'...';
+}
+
+add_filter('excerpt_more', 'custom_excerpt_more');

@@ -20,6 +20,6 @@ This is a template file for the post content
         if (have_posts()):
           while (have_posts()):
             the_post();
-            get_template_part('content', get_post_format());
+            get_template_part('content-blog', get_post_format());
           endwhile; ?>
         <?php endif; ?>  

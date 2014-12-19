@@ -17,11 +17,27 @@ get_header(); ?>
 
   <div id="primary" class="site-content">
     <div class="ninja_forms">
-      <?php while ( have_posts() ) : the_post(); ?>
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-      <?php endwhile; // end of the loop. ?>
+     <?php $method = $_SERVER['REQUEST_METHOD']; ?> 
 
+       <div class="contact-form"> 
+
+         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+
+         <?php if ($method == 'POST' ): ?> 
+           <?php the_content() ?> 
+
+         <?php else: ?> 
+
+           <h3><?php the_title() ?></h3> 
+           <p>Have a question? Want to talk development? Feel free to leave us a message and we’ll reply as soon as possible!</p> 
+
+         <?php the_content() ?> 
+
+         <?php endif; ?> 
+
+         <?php endwhile; endif; ?> 
+
+       </div><!--contact-form-->  
     </div><!-- #ninja_forms -->
   </div><!-- #primary -->
 
