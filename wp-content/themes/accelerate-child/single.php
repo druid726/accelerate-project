@@ -33,34 +33,14 @@ get_header(); ?>
               <div class="entry-meta">
                 <span class="entry-terms author">Written by <a href=""><?php the_author(); ?></a></span>
                 <span class="entry-terms category">Posted in <a href=""><?php the_category(', '); ?></a></span>
-                <span class="entry-terms comments"><?php echo get_comments_number() ?> comments</span>     
+                <span class="entry-terms comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></span>     
               </div>
             </footer>
           </div>
         </article>
 
       <?php comment_form(); ?>
-         <div class="comments-area">
-          <h3 class="comments-title">no comments</h2>
-          <div class="comment-respond">
-            <h3 class="comment-reply-title">Leave a comment</h3>
-            <form action="" method="post" id="commentform" class="comment-form default-form">
-              <div class="form-author">
-                <label for="author">Name</label> 
-                <input id="author" name="author" type="text" value="" aria-required="true">
-              </div>
-              <div class="form-email">
-                <label for="email">Email <span>(hidden)</span></label> 
-                <input id="email" name="email" type="email" value="" aria-required="true">
-              </div>
-              <div class="form-comment">
-                <label for="comment">Your comment</label> 
-                <textarea id="comment" name="comment" rows="8" aria-required="true"></textarea>
-              </div>            
-              <input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
-            </form>
-          </div>
-        </div>
+
 
       </div>
 

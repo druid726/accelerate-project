@@ -11,14 +11,13 @@
 
 /*
  * If the current post is protected by a password and the visitor has not yet
+<div class="comments-area">
  * entered the password we will return early without loading the comments.
  */
-if ( post_password_required() ) {
-  return;
-}
+// if ( post_password_required() ) {
+//   return;
+// }
 ?>
-
-<div class="comments-area">
 
   <?php if ( have_comments() ) : ?>
 
@@ -29,23 +28,20 @@ if ( post_password_required() ) {
     ?>
   </h5>
 
-  <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-  <nav id="comment-nav-above" class="navigation comment-navigation">
-    <!-- <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'accelerate-child' ); ?></h1> -->
-    <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'accelerate-child' ) ); ?></div>
-    <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'accelerate-child' ) ); ?></div>
-  </nav><!-- #comment-nav-above -->
-  <?php endif; // Check for comment navigation. ?>
+<!--This is calling the custom function 'mytheme_comment' in functions.php - whiich will override the default in comment-template.php -->
 
-  <ol class="comment-list">
-    <?php
-      wp_list_comments( array(
-        'style'      => 'ol',
-        'short_ping' => true,
-        'avatar_size'=> 34,
-      ) );
-    ?>
-  </ol><!-- .comment-list -->
+<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+ <nav id="comment-nav-above" class="navigation comment-navigation">
+   <!-- <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'accelerate-child' ); ?></h1> -->
+   <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'accelerate-child' ) ); ?></div>
+   <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'accelerate-child' ) ); ?></div>
+ </nav><!-- #comment-nav-above -->
+ <?php endif; // Check for comment navigation. ?>
+
+  <ul class="comment-list">
+  <?php wp_list_comments( 'type=comment&callback=mytheme_comment' ); ?>
+  </ul><!-- comment-list-->
+
 
   <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
   <nav id="comment-nav-below" class="navigation comment-navigation">
@@ -61,6 +57,12 @@ if ( post_password_required() ) {
 
   <?php endif; // have_comments() ?>
 
-  <?php comment_form(); ?>
+
+  <?php 
+    $comments_args = array(
+        //change Leave a Reply to Leave a Comment
+      'title_reply'=>"Leave a Comment",
+      );
+  ?>comment_form($comments_args); ?>
 
 </div><!-- #comments -->

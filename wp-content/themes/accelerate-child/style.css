@@ -390,6 +390,62 @@ ul, li {
   padding-left: 0;
 }
 
+.comment-form .submit {
+  color: #fff;
+  background: #45ac9d;
+  border-color: #45ac9d;
+  float: right;
+  font: bold 1.05em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+  width: 206px;
+  height: 55px;
+  margin-bottom: 25px;
+}
+
+#reply-title {
+  color: #45ac9d;
+  font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 2em 0 1em;
+}
+
+.comment-form-author {
+  display: block;
+  font: 600 0.8em 'OpenSans', Arial, sans-serif;
+  margin: 10px 0;
+}
+
+#author {
+  height: 39px;
+  width: 100%;
+  display: block;
+}
+
+.comment-form-email {
+  display: block;
+  font: 600 0.8em 'OpenSans', Arial, sans-serif;
+  margin: 10px 0;
+}
+
+#email {
+  height: 39px;
+  width: 100%;
+  display: block;
+}
+
+.comment-form-comment {
+  display: block;
+  font: 600 0.8em 'OpenSans', Arial, sans-serif;
+  margin: 10px 0;
+}
+
+.comment-form textarea {
+  height: 180px;
+  width: 100%;
+  resize: none;
+  font: 16px 'OpenSans', Arial, sans-serif;
+  padding: 5px 10px;
+  border: 1px solid #bfbfbf;
+}
 iframe {
   margin: 30px 0;
 }

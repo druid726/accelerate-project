@@ -60,11 +60,11 @@ register_nav_menu('category-menu', 'Category Menu');
  * from below the comment entry box.
  */
 
-add_filter('comment_form_defaults', 'remove_comment_styling_prompt');
-
-function remove_comment_styling_prompt($defaults) {
-  $defaults['comment_notes_after'] = '';
-  return $defaults;
+add_filter( 'comment_form_defaults', 'afn_custom_comment_form' );
+function afn_custom_comment_form($fields) {
+  $fields['comment_notes_before'] = ''; // Removes comment before notes
+  $fields['comment_notes_after'] = ''; // Removes comment after notes
+    return $fields;
 }
 
 //changes to blog excerpt
@@ -74,3 +74,25 @@ function custom_excerpt_more($more) {
 }
 
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','remove_comment_fields');
+
+function my_comments_callback( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+ 
+    ?>
+    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+        <article id="comment-<?php comment_ID(); ?>" class="comment">
+
+            <div class="comment-content"><?php comment_text(); ?></div> 
+            <div class="reply">
+                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', 'accelerate-child' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+            </div>
+        </article>
+    </li>
+    <?php
+}
