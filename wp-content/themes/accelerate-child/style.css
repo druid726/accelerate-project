@@ -390,62 +390,93 @@ ul, li {
   padding-left: 0;
 }
 
-.comment-form .submit {
-  color: #fff;
-  background: #45ac9d;
-  border-color: #45ac9d;
-  float: right;
-  font: bold 1.05em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
-  width: 206px;
-  height: 55px;
-  margin-bottom: 25px;
+/* single posts */
+.single .post-entry {
+  border-bottom: none;
 }
-
-#reply-title {
+.comments-area {
+  margin-bottom: 80px;
+  clear: both;
+  overflow: hidden;
+}
+.comments-area .comments-title {
+  border: solid #bfbfbf;
+  border-width: 1px 0;
+  color: #150300;
+  font: 600 0.8em/49px 'OpenSans', Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 15px 0;
+  height: 49px;
+}
+.comment-list {
+  margin-bottom: 50px;
+}
+.comment-list .comment-head {
+  margin: 25px 0 10px;
+}
+.comment-list .comment {
+  font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 23px;
+}
+.comment-list .comment .comment-meta {
+  float: right;
+}
+.comment-list .comment a {
+  color: #45ac9d;
+  text-decoration: none;
+}
+.comment-list .comment a:hover {
+  text-decoration: none;
+}
+.comment-list .comment .comment-author {
+  font-weight: 600;
+}
+.comments-area .comment-reply-title {
   color: #45ac9d;
   font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin: 2em 0 1em;
 }
-
-.comment-form-author {
-  display: block;
-  font: 600 0.8em 'OpenSans', Arial, sans-serif;
-  margin: 10px 0;
+.comments-area .comment-reply-title a {
+  color: #45ac9d;
 }
-
-#author {
-  height: 39px;
-  width: 100%;
-  display: block;
+.comments-area .comment-reply-title a:hover {
+  text-decoration: none;
 }
-
-.comment-form-email {
-  display: block;
-  font: 600 0.8em 'OpenSans', Arial, sans-serif;
-  margin: 10px 0;
+.comments-area .comment-form p {
+  font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+  padding-bottom: 23px;
 }
-
-#email {
-  height: 39px;
-  width: 100%;
-  display: block;
+.comments-area .comment-form p a {
+  color: #45ac9d;
 }
-
-.comment-form-comment {
-  display: block;
-  font: 600 0.8em 'OpenSans', Arial, sans-serif;
-  margin: 10px 0;
+.comments-area .comment-form p a:hover {
+  text-decoration: none;
 }
-
-.comment-form textarea {
+.comments-area .comment-form label {
+  display: block;
+  font: 600 1em 'OpenSans', Arial, sans-serif;
+  margin: 10px 0;150300
+}
+.comments-area .comment-form textarea {
   height: 180px;
   width: 100%;
   resize: none;
   font: 16px 'OpenSans', Arial, sans-serif;
   padding: 5px 10px;
-  border: 1px solid #bfbfbf;
 }
+.comments-area .comment-form input[type="submit"] {
+  background: #45ac9d;
+  width: 206px;
+  height: 55px;
+  font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+  color: #fff;
+  margin: 24px 0;
+  float: right;
+  border: 0;
+}
+
 iframe {
   margin: 30px 0;
 }

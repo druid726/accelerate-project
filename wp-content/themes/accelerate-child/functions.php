@@ -72,27 +72,27 @@ function afn_custom_comment_form($fields) {
 function custom_excerpt_more($more) {
   return'...';
 }
-
 add_filter('excerpt_more', 'custom_excerpt_more');
 
+// defines custom markup for post comments
+function accelerate_comments($comment, $args, $depth) {
+  $comment  = '<li class="comment">';
+  $comment .= '<header class="comment-head">';
+  $comment .= '<span class="comment-author">' . get_comment_author() . '</span>';
+  $comment .= '<span class="comment-meta">' . get_comment_date('m/d/Y') . '&emsp;|&emsp;' . get_comment_reply_link(array('depth' => $depth, 'max_depth' => 5)) . '</span>';
+  $comment .= '</header>';
+  $comment .= '<div class="comment-body">';
+  $comment .= '<p>' . get_comment_text() . '</p>';
+  $comment .= '</div>';
+  $comment .= '</li>';
+ 
+  echo $comment;
+}
+
 function remove_comment_fields($fields) {
+    unset($fields['email']);
     unset($fields['url']);
     return $fields;
 }
-add_filter('comment_form_default_fields','remove_comment_fields');
+add_filter('comment_form_default_fields', 'remove_comment_fields');
 
-function my_comments_callback( $comment, $args, $depth ) {
-    $GLOBALS['comment'] = $comment;
- 
-    ?>
-    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-        <article id="comment-<?php comment_ID(); ?>" class="comment">
-
-            <div class="comment-content"><?php comment_text(); ?></div> 
-            <div class="reply">
-                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', 'accelerate-child' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-            </div>
-        </article>
-    </li>
-    <?php
-}

@@ -14,34 +14,32 @@
 <div class="comments-area">
  * entered the password we will return early without loading the comments.
  */
-// if ( post_password_required() ) {
-//   return;
-// }
+if ( post_password_required() ) {
+  return;
+}
 ?>
 
+<div class="comments-area">
   <?php if ( have_comments() ) : ?>
-
   <h5 class="comments-title">
     <?php
-      printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'accelerate-child' ),
+      printf( _n( '1 comment', '%1$s comments', get_comments_number(), 'accelerate-child' ),
         number_format_i18n( get_comments_number() ), get_the_title() );
     ?>
   </h5>
 
-<!--This is calling the custom function 'mytheme_comment' in functions.php - whiich will override the default in comment-template.php -->
+  
 
-<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
- <nav id="comment-nav-above" class="navigation comment-navigation">
-   <!-- <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'accelerate-child' ); ?></h1> -->
-   <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'accelerate-child' ) ); ?></div>
-   <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'accelerate-child' ) ); ?></div>
- </nav><!-- #comment-nav-above -->
- <?php endif; // Check for comment navigation. ?>
-
-  <ul class="comment-list">
-  <?php wp_list_comments( 'type=comment&callback=mytheme_comment' ); ?>
-  </ul><!-- comment-list-->
-
+  <ol class="comment-list">
+    <?php
+      wp_list_comments( array(
+        'style'      => 'ol',
+        'short_ping' => true,
+        'avatar_size'=> 34,
+        'callback' => 'accelerate_comments'
+      ) );
+    ?>
+  </ol><!-- .comment-list -->
 
   <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
   <nav id="comment-nav-below" class="navigation comment-navigation">
@@ -55,14 +53,15 @@
   <p class="no-comments"><?php _e( 'Comments are closed.', 'accelerate-child' ); ?></p>
   <?php endif; ?>
 
+  <?php else: ?>
+    <h2 class="comments-title">0 comments</h2>
   <?php endif; // have_comments() ?>
 
-
-  <?php 
-    $comments_args = array(
-        //change Leave a Reply to Leave a Comment
-      'title_reply'=>"Leave a Comment",
-      );
-  ?>comment_form($comments_args); ?>
+  <?php comment_form(array('title_reply' => 'Leave a Comment')); ?>
 
 </div><!-- #comments -->
+
+
+
+
+
