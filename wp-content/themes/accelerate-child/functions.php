@@ -23,7 +23,8 @@
  * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Child Theme
+ * @author Patti O'Neill
  */
 
 function create_custom_post_types() {
@@ -95,4 +96,5 @@ function remove_comment_fields($fields) {
     return $fields;
 }
 add_filter('comment_form_default_fields', 'remove_comment_fields');
+
 

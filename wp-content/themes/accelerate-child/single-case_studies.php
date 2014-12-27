@@ -6,7 +6,8 @@
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Child Theme
+ * @author Patti O'Neill
  */
 
 get_header(); ?>
@@ -27,7 +28,7 @@ get_header(); ?>
         <aside class="case-study-sidebar">
           <h2><?php the_title(); ?></h2>
           <h5><?php echo $services; ?></h5>
-          <h6>Client: <?php echo $client; ?></h6>
+          <h6><?php echo $client; ?></h6>
           <?php the_content(); ?>
           <p><a href="<?php echo $link; ?>">Visit Live Site</a></p>
         </aside>

@@ -7,7 +7,8 @@
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Child Theme
+ * @author Patti O'Neill
  */
 
 get_header(); ?>

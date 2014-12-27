@@ -7,7 +7,8 @@
  * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Child Theme
+ * @author Patti O'Neill
  */
 ?>
 
@@ -31,6 +32,7 @@
         </div>
       </nav>
 
+    <a href="#" class="crunchify-top">↑</a>
         
       </div><!-- .site-info -->
     </footer>

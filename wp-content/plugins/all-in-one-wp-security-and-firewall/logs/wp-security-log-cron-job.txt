@@ -1,0 +1,3 @@
+[12/27/2014 4:24 AM] - SUCCESS : Cronjob_Handler - Hourly cron handler got fired.
+[12/27/2014 4:24 AM] - SUCCESS : Cronjob_Handler - Daily cron handler got fired.
+[12/27/2014 4:24 AM] - SUCCESS : DB Cleanup - checking if a cleanup needs to be done now...

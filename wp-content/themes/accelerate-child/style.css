@@ -173,16 +173,10 @@ aside.sidebar {
   font-weight: bold;
 }
 
-#masthead {
-    background: #45ac9d;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    clear: both;
-    z-index: 9999;
+#masthead { 
+  background: none repeat scroll 0 0 #45ac9d;
 }
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -866,8 +860,8 @@ small {
 #navigation {
   font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
   overflow: hidden;
-  position: fixed;
-  z-index: 9999;
+  position: relative;
+  z-index: 1;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -906,4 +900,29 @@ small {
   color: #fff;
   background: #45ac9d;
   border-color: #45ac9d;
+}
+
+/* BACK TO TOP BUTTON */
+
+.crunchify-top:hover {
+  color: #fff !important;
+  background-color: #45ac9d;
+  text-decoration: none;
+}
+ 
+.crunchify-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: rgba(69, 172, 157,0.3);
+  text-decoration: none;
+  border-radius: 3.2rem;
+  text-align: center;
+  cursor: pointer;
 }

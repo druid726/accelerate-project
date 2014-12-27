@@ -6,8 +6,9 @@
  *
  * Patti O'Neill - pdoneill26@gmail.com
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Child Theme
+ * @author Patti O'Neill
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -30,6 +31,29 @@
   <![endif]-->
   <!--Modernizr-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
+<!-- Crunchify's Scroll to Top Script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</script>
+ 
+<script>            
+  jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.crunchify-top').fadeIn(duration);
+      } else {
+        jQuery('.crunchify-top').fadeOut(duration);
+      }
+    });
+ 
+    jQuery('.crunchify-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+  });
+</script>
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>

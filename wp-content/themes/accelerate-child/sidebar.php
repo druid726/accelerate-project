@@ -3,7 +3,8 @@
  * The Sidebar containing the main widget area
  *
  * @package WordPress
- * @subpackage Accelerate Child Theme
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Child Theme
  * @author Patti O'Neill
  */
 ?>
