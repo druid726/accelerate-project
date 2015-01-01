@@ -13,6 +13,12 @@
 @import url("../accelerate-theme/style.css");
 
 
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
 .header-main {
   width:1150px;
   margin:auto;
@@ -25,7 +31,6 @@
 
 aside.sidebar {
   border-left: 1px solid #bfbfbf;
-  padding: 55px 0;
   float: left;
   width: 31%;
 }
@@ -66,51 +71,48 @@ aside.sidebar {
 }
 .about h2 {
     color: #fff;
-    font-family: "open sans";
-    font-size: 42px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 4.2rem;
     font-weight: normal;
+    line-height: 4.8rem;
     margin: 16px 0 80px;
     text-align: center;
 }
 
 .about h2 a {
     color: #45ac9d;
-    font-family: "open sans";
-    font-size: 42px;
-    font-weight: normal;
-    margin: 16px 0 80px;
 }
 
 .about h3 {
     color: #3b3b3b;
-    font-family: "open sans";
-    font-size: 20px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 250px 0 20px;
+    margin: 175px 0 20px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .about-sidebar h6 {
-  line-height: 30px;
+  line-height: 2.5rem;
 }
 
 .about-sidebar-1 h6 {
-  line-height: 30px;
+  line-height: 2.5rem;
 }
 
 .about p {
     color: #3b3b3b;
-    font-family: "open sans";
-    font-size: 16.5px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 1.65rem;
     margin: 25px 0 40px;
     text-align: center;
-    line-height: 30px;
+    line-height: 2.5rem;
 }
 
 .about-sidebar h2 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.4rem;
   margin-bottom: 20px;
 }
 
@@ -129,7 +131,7 @@ aside.sidebar {
 
 .about-sidebar-1 h2 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .about-sidebar-1 {
@@ -182,27 +184,26 @@ aside.sidebar {
 }
 
 .blog-post h4 {
-  font-size: 16px;
-  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-family: 'Montserrat', Arial, sans-serif;
   color: #909090;
   text-transform: uppercase;
 }
 
 .blog-post h2 {
-  font-size: 24px;
-  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: bold;
   margin-bottom: 20px;
-  line-height: 30px;
+  line-height: 2.5rem;
 }
 .blog-post .read-more-link {
-  font-size: 16px;
-  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: bold;
   color: #45ac9d;
   text-transform: uppercase;  
 }
-
 .case-study-sidebar {
   float: left;
   width: 33%;
@@ -218,11 +219,11 @@ aside.sidebar {
 
 .widget-area h3 {
   color: #383838;
-  font-size: 24px;
-  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: bold;
   margin: 38px 0 20px;
-  line-height: 30px;
+  line-height: 3rem;
 }
 .widget-area a {
   display: none;
@@ -234,30 +235,22 @@ aside.sidebar {
 
 .tweets ul {
   color: #3b3b3b; 
-  font-family: "open sans";
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: 400;
   margin-bottom: 30px; 
   padding: 0px; 
   vertical-align: baseline;
-  font-size: 16.5px;
-  line-height: 1.75em;
-  letter-spacing: 0.25px;
 }
 
 .tweets li {
-  color: #3b3b3b; 
-  font-family: "open sans";
   font-weight: 400;
-  margin-bottom: 30px; 
-  padding: 0px; 
-  vertical-align: baseline;
-  font-size: 16.5px;
+  font-size: 1.65rem;
   line-height: 1.75em;
   letter-spacing: 0.25px;
 }
 
 .textwidget {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Montserrat';
   font-style: bold;
   color: #45ac9d;
@@ -266,8 +259,8 @@ aside.sidebar {
 
 .textwidget h4 a {
   margin-left: -40px;
-  font-size: 16px;
-  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: bold;
   color: #45ac9d;
   text-transform: uppercase; 
@@ -283,7 +276,7 @@ h2 {
 
 h5 {
   margin-top: 0px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #aaa;
   font-weight: 300;
 }
@@ -303,11 +296,11 @@ a {
   display: inline;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .site-title a {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .entry-summary .read-more-link a {
@@ -374,7 +367,7 @@ ul, li {
 }
 
 .site-description p {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.75em;
   letter-spacing: 0.25px;
 }
@@ -384,7 +377,7 @@ ul, li {
   font-style: bold;
 }
 .copyright p {
-  font-size: xx-small;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 
@@ -396,6 +389,12 @@ ul, li {
 .single .post-entry {
   border-bottom: none;
 }
+.comment-body {
+  font-size: 1.6rem;
+}
+.comment-author, .comment-meta {
+  font-size: 1.3rem;
+}
 .comments-area {
   margin-bottom: 80px;
   clear: both;
@@ -405,10 +404,9 @@ ul, li {
   border: solid #bfbfbf;
   border-width: 1px 0;
   color: #150300;
-  font: 600 0.8em/49px 'OpenSans', Arial, sans-serif;
+  font: 600 1.2rem/4.9rem 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin: 15px 0;
-  height: 49px;
 }
 .comment-list {
   margin-bottom: 50px;
@@ -417,7 +415,7 @@ ul, li {
   margin: 25px 0 10px;
 }
 .comment-list .comment {
-  font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+  font: 1.2rem/2.08em 'OpenSans', Arial, sans-serif;
   border-bottom: 1px solid #BFBFBF;
   padding-bottom: 23px;
 }
@@ -436,9 +434,9 @@ ul, li {
 }
 .comments-area .comment-reply-title {
   color: #45ac9d;
-  font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+  font: bold 1.8rem 'Montserrat', 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
-  margin: 2em 0 1em;
+  margin: 3rem 0 1.5rem;
 }
 .comments-area .comment-reply-title a {
   color: #45ac9d;
@@ -447,7 +445,7 @@ ul, li {
   text-decoration: none;
 }
 .comments-area .comment-form p {
-  font: 0.8em/2.08em 'OpenSans', Arial, sans-serif;
+  font: 1.2rem/2.08em 'OpenSans', Arial, sans-serif;
   padding-bottom: 23px;
 }
 .comments-area .comment-form p a {
@@ -458,21 +456,21 @@ ul, li {
 }
 .comments-area .comment-form label {
   display: block;
-  font: 600 1em 'OpenSans', Arial, sans-serif;
-  margin: 10px 0;150300
+  font: 600 1.6rem 'OpenSans', Arial, sans-serif;
+  margin: 10px 0;
 }
 .comments-area .comment-form textarea {
   height: 180px;
   width: 100%;
   resize: none;
-  font: 16px 'OpenSans', Arial, sans-serif;
+  font: 1.6rem 'OpenSans', Arial, sans-serif;
   padding: 5px 10px;
 }
 .comments-area .comment-form input[type="submit"] {
   background: #45ac9d;
   width: 206px;
   height: 55px;
-  font: bold 1.3em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+  font: bold 2.0rem/4.5rem 'Montserrat', 'OpenSans', Arial, sans-serif;
   color: #fff;
   margin: 24px 0;
   float: right;
@@ -497,9 +495,9 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: Montserrat, sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   font-size: inherit; 
-  line-height: 29.600000381469727px; 
+  line-height: 3rem; 
   margin: 0px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -508,10 +506,10 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: montserrat, sans-serif; 
-  font-size: 32px; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 3.2rem; 
   font-weight: normal; 
-  line-height: 42.5px; 
+  line-height: 4.25rem; 
   margin: 50px 0px 25px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -521,10 +519,10 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: Montserrat, sans-serif; 
-  font-size: 24px; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 2.4rem; 
   font-weight: normal; 
-  line-height: 29.5px; 
+  line-height: 3rem; 
   margin: 0px 0px 22px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -534,10 +532,10 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: Montserrat, sans-serif; 
-  font-size: 24px; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 2.4rem; 
   font-weight: normal; 
-  line-height: 29.5px; 
+  line-height: 3rem; 
   margin: 0px 0px 22px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -550,9 +548,9 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: 'open sans', sans-serif; 
-  font-size: 16.5px; 
-  line-height: 24.5px; 
+  font-family: 'OpenSans', Arial, sans-serif; 
+  font-size: 1.65rem; 
+  line-height: 2.2rem; 
   margin-bottom: 30px; 
   padding: 0px; 
   vertical-align: baseline;
@@ -568,9 +566,9 @@ iframe {
   border: 0px; 
   box-sizing: border-box; 
   color: #3b3b3b; 
-  font-family: 'open sans'; 
-  font-size: 16px; 
-  line-height: 1.6; 
+  font-family: 'OpenSans', Arial, sans-serif;; 
+  font-size: 1.6rem; 
+  line-height: 2.2rem; 
   list-style-type: none; 
   margin: 0px 0px 20px 24px; 
   padding: 0px; 
@@ -580,10 +578,10 @@ iframe {
 .entry-wrap li {
   border: 0px; 
   box-sizing: border-box; 
-  font-family: 'open sans', helvetica, arial, sans-serif; 
+  font-family: 'OpenSans', Arial, sans-serif; 
   font-style: inherit; 
   font-variant: inherit; 
-  line-height: 26px; 
+  line-height: inherit; 
   list-style-type: disc; 
   margin: 0px 0px 10px 20px; 
   padding: 0px; 
@@ -605,7 +603,12 @@ iframe {
   width:48%;
   float: right;
 }
-
+.blog-post-left p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.75em;
+  letter-spacing: 0.25px;
+}
 blockquote,
 q {
   -webkit-hyphens: none;
@@ -625,19 +628,19 @@ q:after {
 
 blockquote {
   color: #767676;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-style: italic;
   font-weight: 300;
-  line-height: 1.2631578947;
+  line-height: 2.2rem;
   margin-bottom: 24px;
 }
 
 blockquote cite,
 blockquote small {
   color: #2b2b2b;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2.2rem;
 }
 
 blockquote em,
@@ -684,7 +687,7 @@ small {
 
 .top-head-title {
   margin-top: 75px;
-  font: bold 1.47em/61px 'Montserrat', sans-serif;
+  font: bold 2.4rem/6.1rem 'Montserrat', sans-serif;
   letter-spacing: -0.034em;
   border-bottom: 1px solid #BFBFBF;
   border-top: 1px solid #BFBFBF;
@@ -700,9 +703,9 @@ small {
 /* ARCHIVE PAGE */
 
 .page-header h1 {
-  font-weight:bold;
-  font-family:'montserrat';
-  font-size:53px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  font-size: 5rem;
   color: #000;
 }
 
@@ -718,8 +721,8 @@ small {
 .site-footer {
     clear: both;
     color: #909090;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 2rem;
     margin: 40px auto;
 }
 
@@ -768,7 +771,7 @@ small {
   display: inline-block;
   padding: 0 5px;
   vertical-align: top;
-  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-font-smoothing: antialiased;
   content: '/f0c0';
 }
@@ -788,14 +791,14 @@ small {
 }
 
 .ninja_forms p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #909090;
 }
 
 .ninja-forms-form label {
-  font-size: 10px;
+  font-size: 1rem;
   color: #909090;
-  font-family: 'open sans', Arial, sans-serif;
+  font-family: 'OpenSans', Arial, sans-serif;;
 }
 
 .field-wrap {
@@ -824,7 +827,7 @@ small {
   background: #45ac9d;
   width: 225px;
   height: 55px;
-  font: 1.05em/45px 'Montserrat', 'OpenSans', Arial, sans-serif;
+  font: 1.6rem/4.5rem 'Montserrat', 'OpenSans', Arial, sans-serif;
   color: #fff;
   margin: 24px 0;
   float: right;
@@ -858,7 +861,7 @@ small {
 }
 
 #navigation {
-  font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
+  font: 1.2rem/6.4rem 'OpenSans', Arial, sans-serif;
   overflow: hidden;
   position: relative;
   z-index: 1;

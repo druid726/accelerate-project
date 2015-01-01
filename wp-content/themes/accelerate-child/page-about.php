@@ -35,7 +35,7 @@ get_header(); ?>
     ?>
 
     <div class="about">
-      <h2><a href="#">Accelerate</a> is a strategy and maketing agency located in the heart of NYC. Our goal is to build 
+      <h2><a href="#">Accelerate</a> is a strategy and marketing agency located in the heart of NYC. Our goal is to build 
       businesses by making our clients visible and making their customers smile.</h2>
         <h3>Our Services</h3>
         <p>We take pride in our clients and the content we create for them. <br> Here's a brief overview of our offered services.</p>
