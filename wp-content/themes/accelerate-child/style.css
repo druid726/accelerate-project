@@ -28,11 +28,18 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-
-aside.sidebar {
+.right-aside {
   border-left: 1px solid #bfbfbf;
+  padding: 55px 0;
   float: left;
   width: 31%;
+}
+.wrap {
+  overflow: hidden;
+}
+.wrap .right-aside  {
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
 }
 
 /* Homepage Styles */
@@ -48,10 +55,11 @@ aside.sidebar {
 }
 
 .about-tag {
-  border-top: 1px dotted #e3e1e1;
+  border-top: 1px solid #bfbfbf;
   text-align: center;
   clear: both;
   padding: 20px 35px;
+  margin-bottom: 100px;
 }
 
 .about-tag h2 {
@@ -343,8 +351,6 @@ ul, li {
   font-weight: 600;
   font-size: 1em;
 }
-
-
 .clearfix:after {
   content: ".";
   display: block;
@@ -353,25 +359,14 @@ ul, li {
   height: 0;
   line-height: 0;
 }
-
 .category {
   text-transform: capitalize;
 }
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
 .site-description p {
   font-size: 1.3rem;
   line-height: 1.75em;
   letter-spacing: 0.25px;
 }
-
 .site-description p a {
   color: #45ac9d;
   font-style: bold;
@@ -380,7 +375,6 @@ ul, li {
   font-size: 0.7rem;
   font-weight: 300;
 }
-
 .form-email {
   padding-left: 0;
 }
@@ -401,8 +395,7 @@ ul, li {
   overflow: hidden;
 }
 .comments-area .comments-title {
-  border: solid #bfbfbf;
-  border-width: 1px 0;
+  border: 1px solid #bfbfbf;
   color: #150300;
   font: 600 1.2rem/4.9rem 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
@@ -658,6 +651,10 @@ small {
   font-size: smaller;
 }
 
+.entry-footer:last-child {
+  border-bottom: none;
+}
+
 /* BLOG SIDEBAR */
 
 .input-btn {
@@ -713,7 +710,7 @@ small {
 /* FOOTER */
 
 .site-footer .site-info {
-  border-top: 1px dotted #e3e1e1;
+  border-top: 1px solid #bfbfbf;
   padding-top: 20px;
   margin-top: 100px;
 }
@@ -851,18 +848,14 @@ small {
 #masthead nav {
     float: right;
 }
-
 #primary-navigation a:hover {
   font-weight: bold;
 }
-
 #primary-navigation li.current-menu-item {
   font-weight: bold;
 }
-
 #navigation {
   font: 1.2rem/6.4rem 'OpenSans', Arial, sans-serif;
-  overflow: hidden;
   position: relative;
   z-index: 1;
   margin-bottom: 40px;
@@ -896,7 +889,39 @@ small {
   text-decoration: none;
   color: #45ac9d;
 }
-
+.navigation .left {
+  float: left;
+}
+.navigation .right {
+  float: right;
+}.
+.navigation .left a,
+.navigation .right a {
+  color: #3b3b3b;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navigation .left a:hover,
+.navigation .right a:hover {
+  color: #45ac9d;
+  text-decoration: none;
+}
+.navigation .left a span,
+.navigation .right a span {
+  color: #3b3b3b;
+}
+.navigation .left a span {
+  padding-left: 8px;
+}
+.navigation .right a span {
+  padding-right: 8px;
+}
+.navigation .left a:hover span,
+.navigation .right a:hover span {
+  text-decoration: none;
+  color: #45ac9d;
+}
 /* MAIL SIGN-UP FORM */
 
 .mc4wp-form button, .mc4wp-form input[type=submit] {

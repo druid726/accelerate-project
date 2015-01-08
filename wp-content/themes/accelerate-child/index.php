@@ -18,46 +18,45 @@
 get_header(); ?>
   <!-- BLOG PAGE -->
   <section class="blog-page">
-    <div class="site-content">
-      <div class="main-content">
-        
-        <?php
+    <div class="container wrap">
+      <div class="main-content">       
+<?php
       if ( have_posts() ) :
         // Start the Loop.
         while ( have_posts() ) : the_post(); ?>
         
           <article class="post-entry">
-          <div class="entry-wrap">
-            <header class="entry-header">
-              <div class="entry-meta">
-                <time class="entry-time"><?php the_date();?></time>
+            <div class="entry-wrap">
+              <header class="entry-header">
+                <div class="entry-meta">
+                  <time class="entry-time"><?php the_date();?></time>
+                </div>
+                <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              </header>
+              <div class="entry-summary">
+                <?php the_excerpt() ?>
+                <a href="<?php the_permalink() ?>" class="read-more-link">Read More ›</a>
               </div>
-              <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            </header>
-            <div class="entry-summary">
-              <?php the_excerpt() ?>
-              <a href="<?php the_permalink() ?>" class="read-more-link">Read More ›</a>
+              <footer class="entry-footer">
+                <div class="entry-meta">
+                  <span class="entry-terms author">Written by <a href=""><?php the_author(); ?></a></span>
+                  <span class="entry-terms category">Posted in <a href=""><?php the_category(', '); ?></a></span>
+                  <span class="entry-terms comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></span>     
+                </div>
+              </footer>
             </div>
-            <footer class="entry-footer">
-              <div class="entry-meta">
-                <span class="entry-terms author">Written by <a href=""><?php the_author(); ?></a></span>
-                <span class="entry-terms category">Posted in <a href=""><?php the_category(', '); ?></a></span>
-                <span class="entry-terms comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></span>     
-              </div>
-            </footer>
-          </div>
-        </article>
+          </article>
       <?php endwhile; endif; ?>
-      
-      <?php if ( have_posts() ): ?>
-          <div id="navigation">
-              <div class="left"><p><?php next_posts_link('&laquo; <span>Older Posts</span>'); ?></p></div>
-              <div class="right"><p><?php previous_posts_link('<span>Newer Posts</span> &raquo;'); ?></p></div>
-          </div>
-      <?php endif; ?>
       </div>
-    </div>
   <?php get_sidebar(); ?>
+    </div>
   </section>
   <!-- END blog page -->
+      
+      <?php if ( have_posts() ): ?>
+          <footer class="navigation container">
+              <div class="left"><?php next_posts_link('&laquo; Older Posts'); ?></div>
+              <div class="right"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
+          </footer>
+      <?php endif; ?>
 <?php get_footer(); ?>

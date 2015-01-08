@@ -42,16 +42,14 @@ get_header(); ?>
         <?php comments_template(); ?>
 
         <?php endwhile; ?>
-
       </div>
-
 <?php get_sidebar(); ?>
     </div>
   </section>
   <!-- END blog page -->
 
   <footer class="navigation container">
-    <div class="left">&larr;<a href="http://localhost:8888/accelerate/?page_id=6">back to posts</a></div>
+    <div class="left"><a href="http://localhost:8888/accelerate/blog">&larr;&nbsp;&nbsp;back to posts</a></div>
   </footer>
   
 

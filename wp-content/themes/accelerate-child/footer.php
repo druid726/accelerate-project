@@ -14,7 +14,7 @@
 
     </div><!-- #main -->
 
-
+  
     <footer class="site-footer" role="contentinfo">
       <div class="site-info">
         <div class="site-description">
@@ -23,6 +23,7 @@
             <p>&copy; 2014 Accelerate, LLC</p>
           </div>
         </div>
+      </div>  
         
       <nav class="social-media-navigation" role="navigation">
         <div class="social-btns">
@@ -34,7 +35,6 @@
 
     <a href="#" class="crunchify-top">↑</a>
         
-      </div><!-- .site-info -->
     </footer>
 
   <?php wp_footer(); ?>

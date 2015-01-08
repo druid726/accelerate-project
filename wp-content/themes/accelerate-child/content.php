@@ -11,7 +11,7 @@
   <footer class="entry-footer">
     <div class="entry-meta">
       <span class="entry-terms author">Written by <a><?php the_author(); ?></a></span>
-      <span class="entry-terms category">Posted in <a><?php the_category(' and '); ?></a></span>
+      <span class="entry-terms category">Posted in <a><?php the_category(','); ?></a></span>
       <span class="entry-terms comments"><?php echo get_comments_number() ?> comments</span>       
     </div><!--entry-meta-->
   </footer>
