@@ -16,8 +16,8 @@
         
           <div class="widget widget_search-form">
             <form role="search" method="get" class="search-form" action="">
-              <input type="text" class="input" placeholder="search" value="" name="s">
-              <input type="button" class="input-btn" value="">
+              <input type="text" class="input" id="search-box-text" placeholder="Search " value="" name="s" title="">
+              <input type="submit" id="searchsubmit" class="input-btn" value="">
             </form>
           </div>
 

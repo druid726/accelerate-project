@@ -17,7 +17,7 @@
 
 get_header(); ?>
   <!-- BLOG PAGE -->
-  <section class="blog-page">
+  <section class="site-content">
     <div class="container wrap">
       <div class="main-content">       
 <?php

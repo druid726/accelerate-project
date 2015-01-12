@@ -36,12 +36,12 @@ get_header(); ?>
       <?php endwhile; ?>
       <!-- next / prev here -->
     <?php else: ?>
-      <article>
+      <article class="no_post">
         <h4>No posts found!</h4>
       </article>
     <?php endif; ?>
+  <?php get_sidebar(); ?>
   </div><!-- #main-content -->
-<?php get_sidebar(); ?>
 </div><!-- container wrap -->
 <?php
 

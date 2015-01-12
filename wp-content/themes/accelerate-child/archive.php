@@ -20,7 +20,8 @@
 
 get_header(); ?>
 
-  <div class="container wrap">
+  <div class="site-content">
+    <div class="container wrap">
       <?php if ( have_posts() ) : ?>
         <header class="top-head-title">
             <?php
@@ -54,7 +55,10 @@ get_header(); ?>
         <?php endif; ?>
     </div><!-- #main-content -->
     <?php get_sidebar(); ?>
+    </div>
   </div><!-- container wrap -->
-<?php
 
-get_footer();
+  <footer class="navigation container">
+    <div class="left"><a href="http://localhost:8888/accelerate/blog">&larr;&nbsp;&nbsp;back to posts</a></div>
+  </footer>
+<?php get_footer(); ?>
